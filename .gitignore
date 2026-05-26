@@ -30,3 +30,12 @@ prisma/*.db-journal
 
 # VSCode
 .vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.log
+*.pid
+*.seed
