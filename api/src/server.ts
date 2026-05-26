@@ -24,6 +24,10 @@ app.get('/health', (req, res) => {
 // Puerto dinámico (requerido para EasyPanel / Railway)
 const PORT = process.env.PORT || 3000;
 
+app.get('/health', (req, res) => {
+  res.json({ status: 'ok' });
+});
+
 app.listen(PORT, () => {
   console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
 });
